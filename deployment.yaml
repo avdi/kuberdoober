@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuberdoober-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kuberdoober
+  template:
+    metadata:
+      labels:
+        app: kuberdoober
+    spec:
+      containers:
+      - name: kuberdoober
+        image: avdi/kuberdooberpooder:latest
+        ports:
+        - containerPort: 9292
