@@ -16,4 +16,4 @@ spec:
       - name: kuberdoober
         image: avdi/kuberdooberpooder:latest
         ports:
-        - containerPort: 9292
+        - containerPort: 8080
