@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+kubectl create secret generic honeycomb --from-literal=api-key="${1:-${HONEYCOMB_API_KEY?No key provided}}"
