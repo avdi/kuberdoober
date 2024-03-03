@@ -1,6 +1,6 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "Untitled Ruby project",
+	"name": "kuberdoober-dev",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
