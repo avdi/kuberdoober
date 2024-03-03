@@ -26,6 +26,7 @@ config:
       collection_interval: 30s
     jaeger: null
     zipkin: null
+    prometheus: null
   processors:
     transform/events:
       error_mode: ignore
@@ -71,6 +72,7 @@ config:
       traces: null
       metrics:
         exporters: [ otlp/k8s-metrics ]
+        receivers: [ otlp, k8s_cluster ]
       logs:
         processors: [ memory_limiter, transform/events, batch ]
         exporters: [ otlp/k8s-events ]
