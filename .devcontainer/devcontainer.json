@@ -4,5 +4,17 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-  "remoteUser": "devcontainer"
+  "remoteUser": "devcontainer",
+	"mounts": [
+		{
+			"source": "${localEnv:HOME}${localEnv:USERPROFILE}/.aws/credentials",
+			"target": "/home/devcontainer/.aws/credentials",
+			"type": "bind"
+		},
+		{
+			"source": "${localEnv:HOME}${localEnv:USERPROFILE}/.kube/config",
+			"target": "/home/devcontainer/.kube/config",
+			"type": "bind"
+		}
+	]
 }
