@@ -30,6 +30,9 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
     && unzip awscliv2.zip \
     && ./aws/install
 
+RUN wget https://github.com/derailed/k9s/releases/download/v0.32.0/k9s_linux_amd64.deb \
+    && dpkg -i k9s_linux_amd64.deb
+
 # Set unprivileged user as default user
 USER $USERNAME
 
