@@ -16,5 +16,6 @@
 			"target": "/home/devcontainer/.kube/config",
 			"type": "bind"
 		}
-	]
+	],
+	"postCreateCommand": ".devcontainer/post-create.sh"
 }
