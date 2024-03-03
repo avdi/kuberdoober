@@ -17,5 +17,6 @@
 			"type": "bind"
 		}
 	],
-	"postCreateCommand": ".devcontainer/post-create.sh"
+	"postCreateCommand": ".devcontainer/post-create.sh",
+	"runArgs": ["--env-file", ".env"]
 }
