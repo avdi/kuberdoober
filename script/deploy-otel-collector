@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+helm install kuberdoober-collector open-telemetry/opentelemetry-collector --values otel-collector/values.yaml
